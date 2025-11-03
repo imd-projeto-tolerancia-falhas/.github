@@ -29,3 +29,13 @@ Entre no repositório setup (onde está o docker-compose.yml) e execute:
 cd setup
 docker compose up -d --build
 ```
+4. Testar
+```bash
+curl --location 'http://localhost:8080/buyTicket' \
+--header 'Content-Type: application/json' \
+--data '{
+    "user": "1",
+    "flight": "AB123",
+    "day": "10/12/2025"
+}'
+```
