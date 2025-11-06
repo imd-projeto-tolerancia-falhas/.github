@@ -17,12 +17,14 @@ Todos os repositórios devem estar no mesmo nível de pasta para que o docker-co
 
 2. Checkout para uma tag específica
 
+BASELINE
 ```bash
 cd IMDTravel && git checkout tags/BASELINE && cd ..
 cd AirlinesHub && git checkout tags/BASELINE && cd ..
 cd Exchange && git checkout tags/BASELINE && cd ..
 cd Fidelity && git checkout tags/BASELINE && cd ..
 ```
+COMFALHAS
 ```bash
 cd IMDTravel && git checkout tags/COMFALHAS && cd ..
 cd AirlinesHub && git checkout tags/COMFALHAS && cd ..
@@ -46,4 +48,27 @@ curl --location 'http://localhost:8080/buyTicket' \
     "flight": "AB123",
     "day": "10/12/2025"
 }'
+```
+
+5. Extras
+
+É possível configurar as falhas e mudar os valores de suas propriedades através do arquivo application.properties:
+
+AirlinesHub
+```properties
+omission.probability=0.2
+time.probability=0.1
+time.delay.millis=5000
+time.duration.millis=10000
+fail.mode.flight=false
+fail.mode.sell=false
+```
+Exchange
+```properties
+fail.probability=0.1
+fail.time=5
+```
+Fidelity
+```properties
+crash.probability=0.02
 ```
