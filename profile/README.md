@@ -16,12 +16,20 @@ git clone https://github.com/imd-projeto-tolerancia-falhas/Fidelity.git
 Todos os repositórios devem estar no mesmo nível de pasta para que o docker-compose do projeto setup funcione corretamente.
 
 2. Checkout para uma tag específica
+
 ```bash
 cd IMDTravel && git checkout tags/BASELINE && cd ..
 cd AirlinesHub && git checkout tags/BASELINE && cd ..
 cd Exchange && git checkout tags/BASELINE && cd ..
 cd Fidelity && git checkout tags/BASELINE && cd ..
 ```
+```bash
+cd IMDTravel && git checkout tags/COMFALHAS && cd ..
+cd AirlinesHub && git checkout tags/COMFALHAS && cd ..
+cd Exchange && git checkout tags/COMFALHAS && cd ..
+cd Fidelity && git checkout tags/COMFALHAS && cd ..
+```
+
 3. Subir os containers
 Entre no repositório setup (onde está o docker-compose.yml) e execute:
 
