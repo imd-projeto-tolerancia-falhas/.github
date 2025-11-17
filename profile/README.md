@@ -53,7 +53,8 @@ curl --location 'http://localhost:8080/buyTicket' \
 --data '{
     "user": "1",
     "flight": "AB123",
-    "day": "10/12/2025"
+    "day": "10/12/2025",
+    "ft": true
 }'
 ```
 
