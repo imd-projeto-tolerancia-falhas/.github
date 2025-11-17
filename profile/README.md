@@ -31,6 +31,13 @@ cd AirlinesHub && git checkout tags/COMFALHAS && cd ..
 cd Exchange && git checkout tags/COMFALHAS && cd ..
 cd Fidelity && git checkout tags/COMFALHAS && cd ..
 ```
+TOLERANTE
+```bash
+cd IMDTravel && git checkout tags/TOLERANTE && cd ..
+cd AirlinesHub && git checkout tags/TOLERANTE && cd ..
+cd Exchange && git checkout tags/TOLERANTE && cd ..
+cd Fidelity && git checkout tags/TOLERANTE && cd ..
+```
 
 3. Subir os containers
 Entre no repositório setup (onde está o docker-compose.yml) e execute:
